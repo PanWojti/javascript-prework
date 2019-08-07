@@ -2,9 +2,9 @@ function getMoveName(argMoveId){
   if(argMoveId == 1){
     return 'kamień';
   } else if (argMoveId == 2) {
-    computerMove = 'papier';
+    return 'papier';
   } else if (argMoveId == 3) {
-    computerMove = 'nożyce';
+    return 'nożyce';
   } else {
     printMessage('Nie znam ruchu o id ' + argMoveId + '.');
     return 'nieznany ruch';
