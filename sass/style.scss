@@ -1,12 +1,32 @@
+$transition: all 1s;
+
+.messages {
+  display: block;
+  flex-direction: row;
+  text-align: center;
+}
+
 .buttons {
-  i {
-    color: green;
-    font-size: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 50px;
-    font-size: 30px;
-    order-radius: 50%;
-    padding-top: 5px;
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0;
+    padding: 0;
+    list-style-type: none;
+    i {
+      color: green;
+      font-size: 0;
+      width: 60px;
+      height: 60px;
+      line-height: 50px;
+      font-size: 30px;
+      border-radius: 50%;
+      padding-top: 5px;
+      transition: $transition
+    }
+    i:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
   }
 }
