@@ -3,8 +3,8 @@ let computerScore = 0;
 
 const playGame = function (Arg){
   clearMessages();
-	let playerInput = Arg;
-	let randomNumber = Math.floor(Math.random() * 3 + 1);
+	const playerInput = Arg;
+	const randomNumber = Math.floor(Math.random() * 3 + 1);
 	console.log('Wylosowana liczba to: ' + randomNumber);
 
 	const getMoveName = function (argMoveId){
@@ -64,7 +64,7 @@ const playGame = function (Arg){
 			printMessage('Wprowadziłeś nieprawidłową cyfrę!');
 		}
 	}
-	
+
 	displayResult(computerMove, playerMove);
 }
 
