@@ -50,7 +50,7 @@ const displayResult = function (argComputerMove, argPlayerMove) {
 	}
 }
 
-function playGame(Arg){
+const playGame = function (Arg){
 
   clearMessages();
 
